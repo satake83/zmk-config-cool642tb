@@ -6,7 +6,6 @@
 #define MOUSE 1
 #define SCROLL 2
 #define NUM 3
-
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 50
 
 &mt {
@@ -89,6 +88,7 @@
             label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             tap-ms = <20>;
         };
 
@@ -112,7 +112,7 @@
 &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &hold_tap LEFT_SHIFT LANGUAGE_2  &lt_to_layer_0 3 INT_KANA  &lt_to_layer_0 5 SPACE  &kp BACKSPACE  &lt_to_layer_0 4 ENTER                                                     &kp RIGHT_CONTROL
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
         MOUSE {
@@ -123,7 +123,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                              &trans
             >;
 
-                    sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
         SCROLL {
@@ -134,7 +134,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
         NUM_SIGN {
@@ -145,7 +145,7 @@
 &trans                &trans            &trans             &trans                &trans                 &trans  &kp DEL  &trans                                                  &kp PERIOD
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
         FUNCTION+ARROW {
@@ -156,7 +156,7 @@
 &trans   &trans   &trans     &trans         &trans            &trans  &trans  &trans                                                 &kp UNDERSCORE
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN>;
         };
 
         MACRO {
@@ -167,7 +167,7 @@
 &trans           &trans        &trans        &trans        &trans        &trans  &trans  &trans                                 &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN>;
         };
     };
 };
