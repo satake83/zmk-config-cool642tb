@@ -89,7 +89,7 @@
 &kp Q             &kp W         &kp E         &kp R                        &kp T                                                                  &kp Y                   &kp U  &kp I                 &kp O                 &kp P
 &kp A             &kp S         &kp D         &kp F                        &kp G                           &trans                  &trans         &kp H                   &kp J  &kp K                 &kp L                 &msc MOVE_Y(0)
 &kp Z             &kp X         &kp C         &kp V                        &kp B                           &trans                  &trans         &kp N                   &kp M  &mouse_key_press MB1  &mouse_key_press MB3  &mouse_key_press MB2
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 LANGUAGE_2  &lt_to_layer_0 1 LANG_HIRAGANA  &lt_to_layer_0 3 SPACE  &kp BACKSPACE  &lt_to_layer_0 2 ENTER                                                     &kp RIGHT_CONTROL
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 0 LANGUAGE_2  &lt_to_layer_0 1 LANG_HIRAGANA  &lt_to_layer_0 3 SPACE  &kp BACKSPACE  &lt_to_layer_0 2 ENTER                                                     &kp RIGHT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP C_AC_SCROLL_DOWN>;
@@ -145,17 +145,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
-        };
-
-        layer_6 {
-            bindings = <
-&kp Q       &kp W      &kp E     &kp R     &kp T                        &kp Y        &kp U  &kp I      &kp O       &kp P
-&kp A       &kp S      &kp D     &kp F     &kp G        &kp N1  &kp N2  &kp H        &kp J  &kp K      &kp L       &kp ENTER
-&kp Z       &kp X      &kp C     &kp V     &kp B        &kp N3  &kp N4  &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp RSHIFT  &kp LCTRL  &kp LGUI  &kp LALT  &lt 1 SPACE  &kp N5  &kp N6  &lt 2 SPACE                                &kp BSPC
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
