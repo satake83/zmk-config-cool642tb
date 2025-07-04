@@ -84,6 +84,14 @@
             time-to-max-speed-ms = <0>;
         };
 
+        encoder_msc_down_up: encoder_msc_down_up {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_DOWN_UP";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            tap-ms = <20>;
+        };
+
         mouse_scrl: mouse_wheel_scrl {
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
@@ -104,7 +112,7 @@
 &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &hold_tap LEFT_SHIFT LANGUAGE_2  &lt_to_layer_0 3 INT_KANA  &lt_to_layer_0 5 SPACE  &kp BACKSPACE  &lt_to_layer_0 4 ENTER                                                     &kp RIGHT_CONTROL
             >;
 
-            sensor-bindings = <&mouse_scrl SCRL_UP SCRL_DOWN>;
+                    sensor-bindings = <&encoder_msc_down_up>;
         };
 
         MOUSE {
@@ -115,7 +123,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                              &trans
             >;
 
-            sensor-bindings = <&mouse_scrl SCRL_UP SCRL_DOWN>;
+                    sensor-bindings = <&encoder_msc_down_up>;
         };
 
         SCROLL {
@@ -126,7 +134,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&mouse_scrl SCRL_UP SCRL_DOWN>;
+                    sensor-bindings = <&encoder_msc_down_up>;
         };
 
         NUM_SIGN {
@@ -137,7 +145,7 @@
 &trans                &trans            &trans             &trans                &trans                 &trans  &kp DEL  &trans                                                  &kp PERIOD
             >;
 
-            sensor-bindings = <&mouse_scrl SCRL_UP SCRL_DOWN>;
+                    sensor-bindings = <&encoder_msc_down_up>;
         };
 
         FUNCTION+ARROW {
@@ -148,7 +156,7 @@
 &trans   &trans   &trans     &trans         &trans            &trans  &trans  &trans                                                 &kp UNDERSCORE
             >;
 
-            sensor-bindings = <&mouse_scrl SCRL_UP SCRL_DOWN>;
+                    sensor-bindings = <&encoder_msc_down_up>;
         };
 
         MACRO {
@@ -159,7 +167,7 @@
 &trans           &trans        &trans        &trans        &trans        &trans  &trans  &trans                                 &trans
             >;
 
-            sensor-bindings = <&mouse_scrl SCRL_UP SCRL_DOWN>;
+                    sensor-bindings = <&encoder_msc_down_up>;
         };
     };
 };
