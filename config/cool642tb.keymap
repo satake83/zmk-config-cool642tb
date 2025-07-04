@@ -120,15 +120,15 @@
 &trans   &trans   &trans     &trans         &trans            &trans  &trans  &trans                                          &kp UNDERSCORE
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(K_SCROLL_UP) K_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         MACRO {
             bindings = <
-&kp LC(LS(ESC))  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                  &kp Y   &kp U  &kp I   &mo 3   &kp P
-&kp A            &kp S         &kp D         &kp F         &kp G         &trans  &trans  &kp H   &kp J  &kp K   &kp L   &trans
-&kp Z            &kp X         &kp C         &kp V         &kp B         &trans  &trans  &kp N   &kp M  &trans  &trans  &trans
-&trans           &trans        &trans        &trans        &trans        &trans  &trans  &trans                         &trans
+&kp LC(LS(ESC))  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                  &trans  &trans  &trans  &trans  &trans
+&trans           &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans           &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans           &trans        &trans        &trans        &trans        &trans  &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -154,17 +154,6 @@
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
-        };
-
-        layer_6 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
     };
 };
