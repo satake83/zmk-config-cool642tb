@@ -104,7 +104,7 @@
 &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &hold_tap LEFT_SHIFT LANGUAGE_2  &lt_to_layer_0 3 INT_KANA  &lt_to_layer_0 5 SPACE  &kp BACKSPACE  &lt_to_layer_0 4 ENTER                                                     &kp RIGHT_CONTROL
             >;
 
-            sensor-bindings = <&mouse_scrl SCRL_UP SCRL_DOWN>;
+            sensor-bindings = <&mouse_scrl MOVE_Y(15) MOVE_Y(-15)>;
         };
 
         MOUSE {
@@ -121,7 +121,7 @@
         SCROLL {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mo 2
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
             >;
