@@ -6,4 +6,4 @@ url: https://github.com/telzo2000/zmk-config-cool642tb
 requires: [seeeduino_xiao_ble]
 features:
   - keys
-  CONFIG_ZMK_POINTING=y,
+CONFIG_ZMK_POINTING=y,
