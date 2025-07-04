@@ -80,8 +80,8 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                            &kp T                                                             &kp Y                   &kp U  &kp I                 &lt_to_layer_0 3 O    &kp P
-&kp A             &kp S         &kp D         &kp F                            &kp G                      &trans                  &trans         &kp H                   &kp J  &kp K                 &kp L                 &mo 5
-&kp Z             &kp X         &kp C         &kp V                            &kp B                      &trans                  &trans         &kp N                   &kp M  &mouse_key_press MB1  &mouse_key_press MB3  &mouse_key_press MB2
+&kp A             &kp S         &kp D         &kp F                            &kp G                      &none                   &none          &kp H                   &kp J  &kp K                 &kp L                 &mo 5
+&kp Z             &kp X         &kp C         &kp V                            &kp B                      &none                   &none          &kp N                   &kp M  &mouse_key_press MB1  &mouse_key_press MB3  &mouse_key_press MB2
 &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &hold_tap LEFT_SHIFT LANGUAGE_2  &lt_to_layer_0 1 INT_KANA  &lt_to_layer_0 3 SPACE  &kp BACKSPACE  &lt_to_layer_0 2 ENTER                                                     &kp RIGHT_CONTROL
             >;
 
