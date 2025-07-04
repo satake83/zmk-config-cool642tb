@@ -79,6 +79,15 @@
             label = "MOUSE_KEY_PRESS";
             #binding-cells = <1>;
         };
+
+        axis: axis {
+            compatible = "zmk,behavior-input-two-axis";
+            label = "AXIS";
+            #binding-cells = <1>;
+            x-input-code = <5>;
+            y-input-code = <5>;
+            time-to-max-speed-ms = <0>;
+        };
     };
 
     keymap {
