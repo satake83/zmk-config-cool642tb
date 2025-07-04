@@ -84,12 +84,6 @@
     };
 
     macros {
-        to_layer_0: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&lt_to_layer_0 0 0>;
-            label = "NEW_MACRO";
-        };
     };
 
     keymap {
