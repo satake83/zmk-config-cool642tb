@@ -128,10 +128,10 @@
 
         MACRO {
             bindings = <
-&kp Q       &kp W      &kp E     &kp R     &kp T                        &kp Y        &kp U  &kp I      &kp O       &kp P
-&kp A       &kp S      &kp D     &kp F     &kp G        &kp N1  &kp N2  &kp H        &kp J  &kp K      &kp L       &kp ENTER
-&kp Z       &kp X      &kp C     &kp V     &kp B        &kp N3  &kp N4  &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp RSHIFT  &kp LCTRL  &kp LGUI  &kp LALT  &lt 1 SPACE  &kp N5  &kp N6  &lt 2 SPACE                                &kp BSPC
+&kp Q   &kp W   &kp E   &kp R   &kp T                   &kp Y   &kp U  &kp I   &kp O   &kp P
+&kp A   &kp S   &kp D   &kp F   &kp G   &trans  &trans  &kp H   &kp J  &kp K   &kp L   &trans
+&kp Z   &kp X   &kp C   &kp V   &kp B   &trans  &trans  &kp N   &kp M  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -139,10 +139,10 @@
 
         MOUSE {
             bindings = <
-&kp Q   &kp W   &kp E   &kp R   &kp T                   &kp Y   &kp U  &kp I     &kp O     &kp P
-&kp A   &kp S   &kp D   &kp F   &kp G   &kp N1  &kp N2  &kp H   &kp J  &kp K     &kp L     &msc MOVE_Y(0)
-&kp Z   &kp X   &kp C   &kp V   &kp B   &kp N3  &kp N4  &kp N   &kp M  &mkp MB1  &mkp MB3  &mkp MB2
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                             &kp LEFT_SHIFT
+&kp Q   &kp W   &kp E   &kp R   &kp T                          &kp Y   &kp U  &kp I     &kp O     &kp P
+&kp A   &kp S   &kp D   &kp F   &kp G   &trans  &trans         &kp H   &kp J  &kp K     &kp L     &msc MOVE_Y(0)
+&kp Z   &kp X   &kp C   &kp V   &kp B   &trans  &trans         &kp N   &kp M  &mkp MB1  &mkp MB3  &mkp MB2
+&trans  &trans  &trans  &trans  &trans  &trans  &kp BACKSPACE  &trans                             &kp LEFT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
