@@ -112,7 +112,7 @@
 &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &hold_tap LEFT_SHIFT LANGUAGE_2  &lt_to_layer_0 3 INT_KANA  &lt_to_layer_0 5 SPACE  &kp BACKSPACE  &lt_to_layer_0 4 ENTER                                                     &kp RIGHT_CONTROL
             >;
 
-                    sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         MOUSE {
@@ -134,7 +134,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
             >;
 
-                    sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         NUM_SIGN {
@@ -145,7 +145,7 @@
 &trans                &trans            &trans             &trans                &trans                 &trans  &kp DEL  &trans                                                  &kp PERIOD
             >;
 
-                    sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         FUNCTION+ARROW {
@@ -156,7 +156,7 @@
 &trans   &trans   &trans     &trans         &trans            &trans  &trans  &trans                                                 &kp UNDERSCORE
             >;
 
-                    sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         MACRO {
@@ -167,7 +167,7 @@
 &trans           &trans        &trans        &trans        &trans        &trans  &trans  &trans                                 &trans
             >;
 
-                    sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
     };
 };
