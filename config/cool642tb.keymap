@@ -124,7 +124,7 @@
             label = "MAILADRESS";
         };
 
-        adress: adress {
+        LP1: adress {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(T) &kp LS(H) &kp LS(E) &kp SPACE &kp LS(L) &kp LS(I) &kp LS(N) &kp LS(K) &kp LS(P) &kp LS(I) &kp LS(L) &kp LS(L) &kp LS(A) &kp LS(R) &kp SPACE &kp N1 &kp SPACE &kp LS(S) &kp LS(O) &kp LS(U) &kp LS(T) &kp LS(H) &kp SPACE &kp N1 &kp N2 &kp LS(F)>;
@@ -136,6 +136,20 @@
             #binding-cells = <0>;
             bindings = <&kp LANG_HIRAGANA &kp LPAR &kp RPAR &kp ENTER &kp LANGUAGE_1 &kp LEFT_ARROW &kp LS(J) &kp LS(V) &kp RIGHT &kp LANGUAGE_4>;
             label = "JV";
+        };
+
+        JR: JR {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG_HIRAGANA &kp LPAR &kp RPAR &kp ENTER &kp LANGUAGE_1 &kp LEFT_ARROW &kp LS(J) &kp LS(R) &kp RIGHT &kp LANGUAGE_4>;
+            label = "JR";
+        };
+
+        machi: machi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG_HIRAGANA &kp LPAR &kp RPAR &kp ENTER &kp LEFT_ARROW &kp M &kp A &kp C &kp H &kp I &kp S &kp E &kp N &kp N &kp ENTER &kp RIGHT>;
+            label = "MACHI";
         };
     };
 
