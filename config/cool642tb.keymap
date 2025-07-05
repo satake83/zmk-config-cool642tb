@@ -92,35 +92,35 @@
         pass1: pass1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(K) &kp O &kp B &kp A &kp T &kp A &kp K &kp U &kp N8 &kp N3 &kp ENTER>;
+            bindings = <&kp LANG1 &kp LS(K) &kp O &kp B &kp A &kp T &kp A &kp K &kp U &kp N8 &kp N3 &kp ENTER>;
             label = "PASS1";
         };
 
         pass2: pass2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp J &kp R &kp E &kp D &kp N2 &kp N0 &kp N2 &kp N5 &kp ENTER>;
+            bindings = <&kp LANGUAGE_1 &kp J &kp R &kp E &kp D &kp N2 &kp N0 &kp N2 &kp N5 &kp ENTER>;
             label = "PASS2";
         };
 
         pass3: pass3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp J &kp R &kp E &kp D &kp N2 &kp N0 &kp N1 &kp N9 &kp ENTER>;
+            bindings = <&kp LANGUAGE_1 &kp J &kp R &kp E &kp D &kp N2 &kp N0 &kp N1 &kp N9 &kp ENTER>;
             label = "PASS3";
         };
 
-        mailadress1: mailadress {
+        mail1: mailadress {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp T &kp A &kp K &kp MINUS &kp K &kp O &kp B &kp A &kp Y &kp A &kp S &kp H &kp H &kp I &kp AT &kp J &kp R &kp E &kp D &kp DOT &kp C &kp O &kp DOT &kp J &kp P>;
+            bindings = <&kp LANGUAGE_1 &kp T &kp A &kp K &kp MINUS &kp K &kp O &kp B &kp A &kp Y &kp A &kp S &kp H &kp H &kp I &kp AT &kp J &kp R &kp E &kp D &kp DOT &kp C &kp O &kp DOT &kp J &kp P>;
             label = "MAILADRESS";
         };
 
-        mailadress2: mailadress {
+        mail2: mailadress {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp T &kp A &kp K &kp U &kp N8 &kp N3 &kp AT &kp I &kp C &kp L &kp O &kp U &kp D &kp DOT &kp C &kp O &kp M>;
+            bindings = <&kp LANGUAGE_1 &kp T &kp A &kp K &kp U &kp N8 &kp N3 &kp AT &kp I &kp C &kp L &kp O &kp U &kp D &kp DOT &kp C &kp O &kp M>;
             label = "MAILADRESS";
         };
 
@@ -134,7 +134,7 @@
         JV: JV {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANG_HIRAGANA &kp LPAR &kp RPAR &kp LANGUAGE_1 &kp LS(J) &kp LS(V) &kp LEFT_ARROW &kp>;
+            bindings = <&kp LANG_HIRAGANA &kp LPAR &kp RPAR &kp ENTER &kp LANGUAGE_1 &kp LEFT_ARROW &kp LS(J) &kp LS(V) &kp RIGHT &kp LANGUAGE_4>;
             label = "JV";
         };
     };
