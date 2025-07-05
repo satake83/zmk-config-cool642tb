@@ -139,10 +139,10 @@
 
         NUM_SIGN {
             bindings = <
-&kp ESCAPE            &kp EXCLAMATION   &kp DOUBLE_QUOTES  &kp HASH              &kp DOLLAR                              &kp SLASH     &kp N7        &kp N8        &kp N9        &kp MINUS
-&kp TAB               &kp PERCENT       &kp AMPERSAND      &kp SQT               &kp GRAVE              &trans  &trans   &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS
-&kp NON_US_BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans   &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL
-&trans                &trans            &trans             &trans                &trans                 &trans  &kp DEL  &trans                                                  &kp PERIOD
+&kp ESCAPE   &kp EXCLAMATION    &kp LEFT_BRACKET   &kp HASH    &kp DOLLAR                   &kp SLASH     &kp N7        &kp N8        &kp N9        &kp MINUS
+&kp TAB      &kp PERCENT        &kp LS(NUMBER_6)   &kp LS(N5)  &kp LS(N7)  &trans  &trans   &kp LS(N8)    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_PLUS
+&kp INT_YEN  &kp RIGHT_BRACKET  &kp RIGHT_BRACKET  &kp LS(N9)  &kp LS(N0)  &trans  &kp DOT  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_EQUAL
+&trans       &trans             &trans             &trans      &trans      &trans  &kp DEL  &trans                                                  &kp PERIOD
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
@@ -150,10 +150,10 @@
 
         FUNCTION+ARROW {
             bindings = <
-&kp F1   &kp F2   &kp F3     &kp F4         &kp F5                            &kp SEMICOLON  &kp MINUS   &kp UP           &kp TILDE  &kp QUESTION
-&kp F6   &kp F7   &kp F8     &kp F9         &kp F10           &trans  &trans  &kp COLON      &kp LEFT    &kp DOWN         &kp RIGHT  &kp AT_SIGN
-&kp F11  &kp F12  &kp CARET  &kp LESS_THAN  &kp GREATER_THAN  &trans  &trans  &kp COMMA      &kp PERIOD  &kp LC(LS(TAB))  &kp LC(W)  &kp LC(TAB)
-&trans   &trans   &trans     &trans         &trans            &trans  &trans  &trans                                                 &kp UNDERSCORE
+&kp F1   &kp F2   &kp F3     &kp F4         &kp F5                            &kp SEMICOLON  &kp MINUS   &kp UP           &kp TILDE2  &kp QUESTION
+&kp F6   &kp F7   &kp F8     &kp F9         &kp F10           &trans  &trans  &kp AMPERSAND  &kp LEFT    &kp DOWN         &kp RIGHT   &kp AT_SIGN
+&kp F11  &kp F12  &kp EQUAL  &kp LESS_THAN  &kp GREATER_THAN  &trans  &trans  &kp COMMA      &kp PERIOD  &kp LC(LS(TAB))  &kp LC(W)   &kp LC(TAB)
+&trans   &trans   &trans     &trans         &trans            &trans  &trans  &trans                                                  &kp LS(MINUS)
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN>;
