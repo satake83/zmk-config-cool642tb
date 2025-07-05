@@ -65,6 +65,11 @@
             bindings = <&kp LS(LC(ESC))>;
             key-positions = <0 34 35>;
         };
+
+        enc {
+            bindings = <&kp ENTER>;
+            key-positions = <39 27>;
+        };
     };
 
     macros {
