@@ -64,6 +64,21 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <9 8>;
         };
+
+        combo6 {
+            bindings = <&kp ENTER>;
+            key-positions = <20 21>;
+        };
+
+        combo7 {
+            bindings = <&kp RIGHT_SHIFT>;
+            key-positions = <32 33>;
+        };
+
+        combo8 {
+            bindings = <&kp DELETE>;
+            key-positions = <40 41>;
+        };
     };
 
     macros {
@@ -72,6 +87,55 @@
             #binding-cells = <1>;
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
+        };
+
+        pass1: pass1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(K) &kp O &kp B &kp A &kp T &kp A &kp K &kp U &kp N8 &kp N3 &kp ENTER>;
+            label = "PASS1";
+        };
+
+        pass2: pass2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp J &kp R &kp E &kp D &kp N2 &kp N0 &kp N2 &kp N5 &kp ENTER>;
+            label = "PASS2";
+        };
+
+        pass3: pass3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp J &kp R &kp E &kp D &kp N2 &kp N0 &kp N1 &kp N9 &kp ENTER>;
+            label = "PASS3";
+        };
+
+        mailadress1: mailadress {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp A &kp K &kp MINUS &kp K &kp O &kp B &kp A &kp Y &kp A &kp S &kp H &kp H &kp I &kp AT &kp J &kp R &kp E &kp D &kp DOT &kp C &kp O &kp DOT &kp J &kp P>;
+            label = "MAILADRESS";
+        };
+
+        mailadress2: mailadress {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp A &kp K &kp U &kp N8 &kp N3 &kp AT &kp I &kp C &kp L &kp O &kp U &kp D &kp DOT &kp C &kp O &kp M>;
+            label = "MAILADRESS";
+        };
+
+        adress: adress {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(T) &kp LS(H) &kp LS(E) &kp SPACE &kp LS(L) &kp LS(I) &kp LS(N) &kp LS(K) &kp LS(P) &kp LS(I) &kp LS(L) &kp LS(L) &kp LS(A) &kp LS(R) &kp SPACE &kp N1 &kp SPACE &kp LS(S) &kp LS(O) &kp LS(U) &kp LS(T) &kp LS(H) &kp SPACE &kp N1 &kp N2 &kp LS(F)>;
+            label = "ADRESS";
+        };
+
+        JV: JV {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG_HIRAGANA &kp LPAR &kp RPAR &kp LANGUAGE_1 &kp LS(J) &kp LS(V) &kp LEFT_ARROW &kp>;
+            label = "JV";
         };
     };
 
@@ -134,10 +198,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                            &kp T                                                             &kp Y                   &kp U  &kp I                 &lt_to_layer_0 5 O    &kp P
-&kp A             &kp S         &kp D         &kp F                            &kp G                      &none                   &none          &kp H                   &kp J  &kp K                 &kp L                 &mo 2
-&kp Z             &kp X         &kp C         &kp V                            &kp B                      &none                   &none          &kp N                   &kp M  &mouse_key_press MB1  &mouse_key_press MB3  &mouse_key_press MB2
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &hold_tap LEFT_SHIFT LANGUAGE_2  &lt_to_layer_0 3 INT_KANA  &lt_to_layer_0 5 SPACE  &kp BACKSPACE  &lt_to_layer_0 4 ENTER                                                     &kp RIGHT_CONTROL
+&kp Q             &kp W         &kp E         &kp R                            &kp T                                                                          &kp Y                   &kp U  &kp I                 &lt_to_layer_0 5 O    &kp P
+&kp A             &kp S         &kp D         &kp F                            &kp G                      &kp ENTER               &none                       &kp H                   &kp J  &kp K                 &kp L                 &mo 2
+&kp Z             &kp X         &kp C         &kp V                            &kp B                      &kp BACKSPACE           &none                       &kp N                   &kp M  &mouse_key_press MB1  &mouse_key_press MB3  &mouse_key_press MB2
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &hold_tap LEFT_SHIFT LANGUAGE_2  &lt_to_layer_0 3 INT_KANA  &lt_to_layer_0 5 SPACE  &lt_to_layer_0 5 BACKSPACE  &lt_to_layer_0 4 ENTER                                                     &kp RIGHT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
@@ -189,10 +253,10 @@
 
         MACRO {
             bindings = <
-&kp LC(LS(ESC))  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                  &kp LG(LS(S))  &trans  &trans  &trans  &trans
-&trans           &trans        &trans        &trans        &trans        &trans  &trans  &trans         &trans  &trans  &trans  &trans
-&trans           &trans        &trans        &trans        &trans        &trans  &trans  &trans         &trans  &trans  &trans  &trans
-&trans           &trans        &trans        &trans        &trans        &trans  &trans  &trans                                 &trans
+&kp LC(LS(ESC))  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                     &kp LG(LS(S))  &trans     &trans     &trans     &trans
+&trans           &trans        &trans        &trans        &trans        &trans  &trans     &trans         &trans     &trans     &trans     &trans
+&trans           &trans        &trans        &trans        &trans        &trans  &kp LS(Z)  &kp LS(X)      &kp LS(C)  &kp LS(V)  &kp LS(B)  &kp LS(V)
+&trans           &trans        &trans        &trans        &trans        &trans  &trans     &trans                                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN>;
