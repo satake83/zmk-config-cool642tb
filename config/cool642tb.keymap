@@ -162,35 +162,35 @@
         undo: undo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANG_HANJA &kp LS(Z)>;
+            bindings = <&kp LANG_HANJA &kp LC(Z)>;
             label = "UNDO";
         };
 
         cut: cut {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANG_HANJA &kp LS(X)>;
+            bindings = <&kp LANG_HANJA &kp LC(X)>;
             label = "CUT";
         };
 
         copy: copy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANG_HANJA &kp LS(C)>;
+            bindings = <&kp LANG_HANJA &kp LC(C)>;
             label = "COPY";
         };
 
         paste: paste {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANG_HANJA &kp LS(V)>;
+            bindings = <&kp LANG_HANJA &kp LC(V)>;
             label = "PASTE";
         };
 
         big: big {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANG_HANJA &kp LS(B)>;
+            bindings = <&kp LANG_HANJA &kp LC(B)>;
             label = "BIG";
         };
     };
