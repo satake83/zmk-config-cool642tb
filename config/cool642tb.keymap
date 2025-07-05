@@ -79,6 +79,11 @@
             bindings = <&kp LS(LC(ESCAPE))>;
             key-positions = <0 1>;
         };
+
+        combo10 {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <39 38>;
+        };
     };
 
     macros {
