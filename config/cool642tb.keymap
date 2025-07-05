@@ -40,7 +40,7 @@
     combos {
         compatible = "zmk,combos";
 
-        comb1 {
+        comb1-TAB {
             bindings = <&kp TAB>;
             key-positions = <11 10>;
         };
@@ -48,11 +48,6 @@
         comb2 {
             bindings = <&kp LS(ESCAPE)>;
             key-positions = <0 1>;
-        };
-
-        comb3 {
-            bindings = <&kp CAPSLOCK>;
-            key-positions = <22 23>;
         };
 
         comb4 {
@@ -267,10 +262,10 @@
 
         MACRO {
             bindings = <
-&kp LC(LS(ESC))  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                     &kp LG(LS(S))  &trans     &trans     &trans     &trans
-&trans           &trans        &trans        &trans        &trans        &trans  &trans     &trans         &trans     &trans     &trans     &trans
-&trans           &trans        &trans        &trans        &trans        &trans  &kp LS(Z)  &kp LS(X)      &kp LS(C)  &kp LS(V)  &kp LS(B)  &kp LS(V)
-&trans           &trans        &trans        &trans        &trans        &trans  &trans     &trans                                          &trans
+&kp LC(LS(ESC))  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &JV                        &kp LG(LS(S))  &trans     &trans     &trans     &trans
+&trans           &trans        &trans        &trans        &machi  &trans  &mail1     &pass3         &pass2     &pass1     &LP1       &trans
+&kp LS(Z)        &kp LS(X)     &kp LS(C)     &kp LS(V)     &JR     &mail2  &kp LS(Z)  &kp LS(X)      &kp LS(C)  &kp LS(V)  &kp LS(B)  &kp LS(V)
+&trans           &trans        &trans        &trans        &trans  &trans  &trans     &trans                                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN>;
