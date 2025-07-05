@@ -152,7 +152,7 @@
             #binding-cells = <2>;
             quick-tap-ms = <(50)>;
             require-prior-idle-ms = <(-1)>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <-1>;
         };
 
         mouse_key_press: mouse_key_press {
