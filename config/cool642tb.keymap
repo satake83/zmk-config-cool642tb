@@ -216,10 +216,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                            &kp T                                                                          &kp Y                   &kp U  &kp I      &lt_to_layer_0 5 O  &kp P
-&kp A             &kp S         &kp D         &kp F                            &kp G                      &kp ENTER               &none                       &kp H                   &kp J  &kp K      &kp L               &mo 2
-&kp Z             &kp X         &kp C         &kp V                            &kp B                      &kp BACKSPACE           &none                       &kp N                   &kp M  &kp COMMA  &kp PERIOD          &mouse_key_press MB2
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &hold_tap LEFT_SHIFT LANGUAGE_2  &lt_to_layer_0 3 INT_KANA  &lt_to_layer_0 5 SPACE  &lt_to_layer_0 5 BACKSPACE  &lt_to_layer_0 4 ENTER                                        &kp RIGHT_CONTROL
+&kp Q             &kp W         &kp E         &kp R                            &kp T                                                                       &kp Y                   &kp U  &kp I      &lt_to_layer_0 5 O  &kp P
+&kp A             &kp S         &kp D         &kp F                            &kp G                   &kp ENTER               &none                       &kp H                   &kp J  &kp K      &kp L               &mo 2
+&kp Z             &kp X         &kp C         &kp V                            &kp B                   &kp BACKSPACE           &none                       &kp N                   &kp M  &kp COMMA  &kp PERIOD          &mouse_key_press MB2
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &hold_tap LEFT_SHIFT LANGUAGE_1  &lt_to_layer_0 3 LANG4  &lt_to_layer_0 5 SPACE  &lt_to_layer_0 5 BACKSPACE  &lt_to_layer_0 4 ENTER                                        &kp RIGHT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
