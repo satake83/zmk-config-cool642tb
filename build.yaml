@@ -25,4 +25,4 @@ include:
    shield: cool642tb_L
  - board: seeeduino_xiao_ble
    shield: settings_reset
-   config:  -  CONFIG_ZMK_KEYMAP_LANG=ja_jp
+  config:  - CONFIG_ZMK_KEYMAP_LANG=ja_jp
