@@ -65,7 +65,7 @@
         };
 
         combo6shift {
-            bindings = <&kt RIGHT_SHIFT>;
+            bindings = <&sk RIGHT_SHIFT>;
             key-positions = <32 33>;
         };
 
