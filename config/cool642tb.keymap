@@ -152,13 +152,13 @@
             #binding-cells = <2>;
             quick-tap-ms = <(-1)>;
             require-prior-idle-ms = <(-1)>;
-            tapping-term-ms = <5>;
+            tapping-term-ms = <>;
         };
 
         mouse_key_press: mouse_key_press {
             compatible = "zmk,behavior-mouse-key-press";
             label = "MOUSE_KEY_PRESS";
-            #binding-cells = <1>;
+            #binding-cells = <100>;
         };
 
         axis: axis {
