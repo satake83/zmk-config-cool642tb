@@ -99,14 +99,14 @@
         mail1: mail1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANG_HANJA &kp T &kp A &kp K &kp MINUS &kp K &kp O &kp B &kp A &kp Y &kp A &kp S &kp H &kp H &kp I &kp LS(RIGHT_BRACKET) &kp J &kp R &kp E &kp D &kp DOT &kp C &kp O &kp DOT &kp J &kp P>;
+            bindings = <&kp LANG_HANJA &kp T &kp A &kp K &kp MINUS &kp K &kp O &kp B &kp A &kp Y &kp A &kp S &kp H &kp H &kp I &kp RIGHT_BRACKET &kp J &kp R &kp E &kp D &kp DOT &kp C &kp O &kp DOT &kp J &kp P>;
             label = "MAILADRESS";
         };
 
         mail2: mail2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANG_HANJA &kp T &kp A &kp K &kp U &kp N8 &kp N3 &kp LS(RIGHT_BRACKET) &kp I &kp C &kp L &kp O &kp U &kp D &kp DOT &kp C &kp O &kp M>;
+            bindings = <&kp LANG_HANJA &kp T &kp A &kp K &kp U &kp N8 &kp N3 &kp RIGHT_BRACKET &kp I &kp C &kp L &kp O &kp U &kp D &kp DOT &kp C &kp O &kp M>;
             label = "MAILADRESS";
         };
 
