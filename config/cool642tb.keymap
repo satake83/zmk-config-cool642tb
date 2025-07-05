@@ -193,10 +193,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                                     &kp T                                                                            &kp Y                   &kp U  &kp I     &lt_to_layer_0 5 O  &kp P
-&kp A             &kp S         &kp D         &kp F                                     &kp G                        &kp ENTER               &kp LANG_HANJA              &kp H                   &kp J  &kp K     &kp L               &mo 2
-&kp Z             &kp X         &kp C         &kp V                                     &kp B                        &kp BACKSPACE           &kp LANGUAGE_1              &kp N                   &kp M  &mkp MB1  &mkp MB3            &mkp MB2
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &hold_tap LEFT_SHIFT LANG_ZENKAKUHANKAKU  &lt_to_layer_0 3 LANGUAGE_1  &lt_to_layer_0 5 SPACE  &lt_to_layer_0 5 BACKSPACE  &lt_to_layer_0 4 ENTER                                       &kp RIGHT_CONTROL
+&kp Q             &kp W         &kp E         &kp R                            &kp T                                                                            &kp Y                   &kp U  &kp I     &lt_to_layer_0 5 O  &kp P
+&kp A             &kp S         &kp D         &kp F                            &kp G                        &kp ENTER               &kp LANG_HANJA              &kp H                   &kp J  &kp K     &kp L               &mo 2
+&kp Z             &kp X         &kp C         &kp V                            &kp B                        &kp BACKSPACE           &kp LANGUAGE_1              &kp N                   &kp M  &mkp MB1  &mkp MB3            &mkp MB2
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &hold_tap LEFT_SHIFT LANG_HANJA  &lt_to_layer_0 3 LANGUAGE_1  &lt_to_layer_0 5 SPACE  &lt_to_layer_0 5 BACKSPACE  &lt_to_layer_0 4 ENTER                                       &kp RIGHT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
@@ -226,10 +226,10 @@
 
         NUM_SIGN {
             bindings = <
-&kp ESCAPE   &kp EXCLAMATION    &kp AT_SIGN        &kp HASH          &kp DOLLAR                                     &kp SLASH     &kp N7        &kp N8        &kp N9        &kp MINUS
-&kp TAB      &kp PERCENT        &kp LS(NUMBER_6)   &kp LS(NUMBER_7)  &kp SINGLE_QUOTE  &kp LANGUAGE_3  &kp INT_YEN  &kp LS(N8)    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_PLUS
-&kp INT_YEN  &kp RIGHT_BRACKET  &kp RIGHT_BRACKET  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LANG_HANJA  &kp DOT      &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp CARET
-&trans       &trans             &trans             &trans            &trans            &trans          &kp DEL      &trans                                                  &kp PERIOD
+&kp ESCAPE   &kp EXCLAMATION    &kp AT_SIGN        &kp HASH          &kp DOLLAR                             &kp SLASH     &kp N7        &kp N8        &kp N9        &kp MINUS
+&kp TAB      &kp PERCENT        &kp LS(NUMBER_6)   &kp LS(NUMBER_7)  &kp SINGLE_QUOTE  &trans  &kp INT_YEN  &kp LS(N8)    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_PLUS
+&kp INT_YEN  &kp RIGHT_BRACKET  &kp RIGHT_BRACKET  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &trans  &kp DOT      &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp CARET
+&trans       &trans             &trans             &trans            &trans            &trans  &kp DEL      &trans                                                  &kp PERIOD
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
