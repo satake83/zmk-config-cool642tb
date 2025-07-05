@@ -158,7 +158,7 @@
         mouse_key_press: mouse_key_press {
             compatible = "zmk,behavior-mouse-key-press";
             label = "MOUSE_KEY_PRESS";
-            #binding-cells = <100>;
+            #binding-cells = <1>;
         };
 
         axis: axis {
