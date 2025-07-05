@@ -17,47 +17,47 @@
     combos {
         compatible = "zmk,combos";
 
-        comb1TAB {
+        comb1tab {
             bindings = <&kp TAB>;
             key-positions = <11 10>;
         };
 
-        comb2 {
+        comb2esc {
             bindings = <&kp LS(ESCAPE)>;
             key-positions = <0 1>;
         };
 
-        comb4 {
+        comb3shift {
             bindings = <&kt LEFT_SHIFT>;
             key-positions = <22 23>;
         };
 
-        combo5 {
+        combo4bksp {
             bindings = <&kp BACKSPACE>;
             key-positions = <9 8>;
         };
 
-        combo6 {
+        combo5enter {
             bindings = <&kp ENTER>;
             key-positions = <20 21>;
         };
 
-        combo7 {
+        combo6shift {
             bindings = <&kt RIGHT_SHIFT>;
             key-positions = <32 33>;
         };
 
-        combo8 {
+        combo7delet {
             bindings = <&kp DELETE>;
             key-positions = <40 41>;
         };
 
-        combo9 {
+        combo8task {
             bindings = <&kp LS(LC(ESCAPE))>;
             key-positions = <0 1>;
         };
 
-        combo10 {
+        combo9lang1 {
             bindings = <&kp LANGUAGE_1>;
             key-positions = <39 38>;
         };
