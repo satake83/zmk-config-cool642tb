@@ -85,6 +85,11 @@
             bindings = <&to 6>;
             key-positions = <28 16>;
         };
+
+        new {
+            bindings = <&kp LS(LC(N))>;
+            key-positions = <30 29>;
+        };
     };
 
     macros {
