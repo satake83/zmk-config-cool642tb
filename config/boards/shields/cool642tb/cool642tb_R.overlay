@@ -1,3 +1,17 @@
+/ {
+    /* ① behavior-k を使って custom ノードを定義 */
+    jp_underscore_node: jp_underscore {
+        compatible = "zmk,behavior-k";
+        label = "JP_UNDERSCORE";
+        key = <UNDER>;    /* アンダースコアを送るキーコード */
+    };
+
+    /* ② alias に名前を登録 */
+    aliases {
+        JP_UNDERSCORE = &jp_underscore_node;
+    };
+};
+
 #include "cool642tb.dtsi"
 
 &default_transform {
