@@ -147,14 +147,14 @@
         mail1: mail1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANG_HANJA &kp T &kp A &kp K &kp MINUS &kp K &kp O &kp B &kp A &kp Y &kp A &kp S &kp H &kp H &kp I &kp RIGHT_BRACKET &kp J &kp R &kp E &kp D &kp DOT &kp C &kp O &kp DOT &kp J &kp P>;
+            bindings = <&kp LANG_HANJA &kp T &kp A &kp K &kp MINUS &kp K &kp O &kp B &kp A &kp Y &kp A &kp S &kp H &kp H &kp I &kp JP_AT &kp J &kp R &kp E &kp D &kp DOT &kp C &kp O &kp DOT &kp J &kp P>;
             label = "MAILADRESS";
         };
 
         mail2: mail2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANG_HANJA &kp T &kp A &kp K &kp U &kp N8 &kp N3 &kp RIGHT_BRACKET &kp I &kp C &kp L &kp O &kp U &kp D &kp DOT &kp C &kp O &kp M>;
+            bindings = <&kp LANG_HANJA &kp T &kp A &kp K &kp U &kp N8 &kp N3 &kp JP_AT &kp I &kp C &kp L &kp O &kp U &kp D &kp DOT &kp C &kp O &kp M>;
             label = "MAILADRESS";
         };
 
@@ -347,7 +347,7 @@
         FUNCTION+ARROW {
             bindings = <
 &kp F1   &kp F2   &kp F3     &kp F4         &kp F5                            &kp SEMICOLON     &kp MINUS   &kp UP           &kp JP_TILDE  &kp QUESTION
-&kp F6   &kp F7   &kp F8     &kp F9         &kp F10           &trans  &trans  &kp SINGLE_QUOTE  &kp LEFT    &kp DOWN         &kp RIGHT     &kp LBKT
+&kp F6   &kp F7   &kp F8     &kp F9         &kp F10           &trans  &trans  &kp SINGLE_QUOTE  &kp LEFT    &kp DOWN         &kp RIGHT     &kp JP_AT
 &kp F11  &kp F12  &kp EQUAL  &kp LESS_THAN  &kp GREATER_THAN  &trans  &trans  &kp COMMA         &kp PERIOD  &kp LC(LS(TAB))  &kp LC(W)     &kp LC(TAB)
 &trans   &trans   &trans     &trans         &trans            &trans  &trans  &trans                                                       &kp JP_UNDERSCORE
             >;
