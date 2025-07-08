@@ -241,6 +241,20 @@
             bindings = <&kp LANG_HANJA &kp LC(B)>;
             label = "BIG";
         };
+
+        Notepad: Notepad {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG1 &kp LG(LEFT_GUI) &kp N &kp O &kp T &kp E &kp P &kp A &kp D &kp ENTER>;
+            label = "NOTEPAD";
+        };
+
+        open: open {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG1 &kp LG(LEFT_GUI) &kp LC(V) &kp ENTER>;
+            label = "OPEN";
+        };
     };
 
     behaviors {
@@ -357,9 +371,9 @@
 
         MACRO {
             bindings = <
-&kp LC(LS(ESC))  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &JV                     &kp LG(LS(S))  &mail1  &mail2  &trans  &pass4
+&kp LC(LS(ESC))  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &JV                     &kp LG(LS(S))  &mail1  &mail2  &open   &pass4
 &trans           &bt BT_SEL 3  &bt BT_SEL 4  &trans        &machi  &trans  &trans  &pass3         &pass2  &pass1  &LP1    &trans
-&undo            &cut          &copy         &paste        &JR     &trans  &trans  &undo          &cut    &copy   &paste  &big
+&undo            &cut          &copy         &paste        &JR     &trans  &trans  &Notepad       &cut    &copy   &paste  &big
 &trans           &trans        &trans        &trans        &trans  &trans  &trans  &trans                                 &trans
             >;
 
