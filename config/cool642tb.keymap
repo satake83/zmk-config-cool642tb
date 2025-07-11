@@ -70,7 +70,7 @@
         };
 
         combo7delet {
-            bindings = <&sl 5>;
+            bindings = <&sl 4>;
             key-positions = <40 41>;
         };
 
@@ -105,7 +105,7 @@
         };
 
         encoder {
-            bindings = <&to 6>;
+            bindings = <&to 5>;
             key-positions = <28 16>;
         };
 
@@ -338,7 +338,7 @@
 &kp Q             &kp W         &kp E         &kp R                            &kp T                                                                &kp Y                   &kp U  &kp I     &kp O     &kp P
 &kp A             &kp S         &kp D         &kp F                            &kp G                        &kp ENTER               &kp LANGUAGE_1  &kp H                   &kp J  &kp K     &kp L     &mo 4
 &kp Z             &kp X         &kp C         &kp V                            &kp B                        &kp ENTER               &kp LANG_HANJA  &kp N                   &kp M  &mkp MB1  &mkp MB3  &mkp MB2
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &hold_tap LEFT_SHIFT LANG_HANJA  &lt_to_layer_0 3 LANGUAGE_1  &lt_to_layer_0 4 SPACE  &kp BACKSPACE   &lt_to_layer_0 4 ENTER                             &hold_tap RIGHT_CONTROL LA(LEFT_ARROW)
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &hold_tap LEFT_SHIFT LANG_HANJA  &lt_to_layer_0 2 LANGUAGE_1  &lt_to_layer_0 4 SPACE  &kp BACKSPACE   &lt_to_layer_0 3 ENTER                             &hold_tap RIGHT_CONTROL LA(LEFT_ARROW)
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
