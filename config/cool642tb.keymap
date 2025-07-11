@@ -295,7 +295,7 @@
                 <&kp LANG_HANJA>,
                 <&macro_wait_time 2>,
                 <&kp LG(R)>,
-                <&macro_wait_time 20>,
+                <&macro_wait_time 30>,
                 <&kp N &kp O &kp T &kp E &kp P &kp A &kp D &kp ENTER>;
 
             label = "NOTEPAD";
@@ -307,9 +307,11 @@
             bindings =
                 <&kp LANG_HANJA>,
                 <&macro_wait_time 2>,
+                <&kp LC(C)>,
+                <&macro_wait_time 5>,
                 <&kp LG(R)>,
-                <&macro_wait_time 20>,
-                <&kp LC(C) &kp LC(V) &kp ENTER>;
+                <&macro_wait_time 30>,
+                <&kp LC(V) &kp ENTER>;
 
             label = "OPEN";
         };
