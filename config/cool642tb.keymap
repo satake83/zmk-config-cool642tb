@@ -295,7 +295,7 @@
                 <&kp LANG_HANJA>,
                 <&macro_wait_time 2>,
                 <&kp LG(R)>,
-                <&macro_wait_time 10>,
+                <&macro_wait_time 20>,
                 <&kp N &kp O &kp T &kp E &kp P &kp A &kp D &kp ENTER>;
 
             label = "NOTEPAD";
@@ -308,7 +308,7 @@
                 <&kp LANG_HANJA>,
                 <&macro_wait_time 2>,
                 <&kp LG(R)>,
-                <&macro_wait_time 10>,
+                <&macro_wait_time 20>,
                 <&kp LC(C) &kp LC(V) &kp ENTER>;
 
             label = "OPEN";
