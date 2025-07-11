@@ -329,11 +329,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LANG_HANJA &kp F2 &kp LEFT_ARROW &kp LC(V)>,
-                <&macro_wait_time 5>,
-                <&kp ENTER>,
+                <&kp LANG_HANJA>,
                 <&macro_wait_time 2>,
-                <&macro_press>;
+                <&kp F2 &kp LEFT_ARROW &kp LC(V)>,
+                <&macro_wait_time 5>,
+                <&kp ENTER>;
 
             label = "NAME";
         };
