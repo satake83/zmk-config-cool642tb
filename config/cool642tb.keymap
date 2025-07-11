@@ -126,112 +126,165 @@
         pass1: pass1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANG_HANJA &kp LS(K) &kp O &kp B &kp A &kp T &kp A &kp K &kp U &kp N8 &kp N3 &kp ENTER>;
+            bindings =
+                <&kp LANG_HANJA>,
+                <&macro_wait_time 2>,
+                <&kp LS(K) &kp O &kp B &kp A &kp T &kp A &kp K &kp U &kp N8 &kp N3 &kp ENTER>;
+
             label = "PASS1";
         };
 
         pass2: pass2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANG_HANJA &kp J &kp R &kp E &kp D &kp N2 &kp N0 &kp N2 &kp N5 &kp ENTER>;
+            bindings =
+                <&kp LANG_HANJA>,
+                <&macro_wait_time 2>,
+                <&kp J &kp R &kp E &kp D &kp N2 &kp N0 &kp N2 &kp N5 &kp ENTER>;
+
             label = "PASS2";
         };
 
         pass3: pass3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANG_HANJA &kp J &kp R &kp E &kp D &kp N2 &kp N0 &kp N1 &kp N9 &kp ENTER>;
+            bindings =
+                <&kp LANG_HANJA>,
+                <&macro_wait_time 2>,
+                <&kp J &kp R &kp E &kp D &kp N2 &kp N0 &kp N1 &kp N9 &kp ENTER>;
+
             label = "PASS3";
         };
 
         mail1: mail1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANG_HANJA &kp T &kp A &kp K &kp MINUS &kp K &kp O &kp B &kp A &kp Y &kp A &kp S &kp H &kp H &kp I &kp JP_AT &kp J &kp R &kp E &kp D &kp DOT &kp C &kp O &kp DOT &kp J &kp P>;
+            bindings =
+                <&kp LANG_HANJA>,
+                <&macro_wait_time 2>,
+                <&kp T &kp A &kp K &kp MINUS &kp K &kp O &kp B &kp A &kp Y &kp A &kp S &kp H &kp H &kp I &kp JP_AT &kp J &kp R &kp E &kp D &kp DOT &kp C &kp O &kp DOT &kp J &kp P>;
+
             label = "MAIL1";
         };
 
         mail2: mail2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANG_HANJA &kp T &kp A &kp K &kp U &kp N8 &kp N3 &kp JP_AT &kp I &kp C &kp L &kp O &kp U &kp D &kp DOT &kp C &kp O &kp M>;
+            bindings =
+                <&kp LANG_HANJA>,
+                <&macro_wait_time 2>,
+                <&kp T &kp A &kp K &kp U &kp N8 &kp N3 &kp JP_AT &kp I &kp C &kp L &kp O &kp U &kp D &kp DOT &kp C &kp O &kp M>;
+
             label = "MAIL2";
         };
 
         LP1: adress {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANG_HANJA &kp LS(T) &kp LS(H) &kp LS(E) &kp SPACE &kp LS(L) &kp LS(I) &kp LS(N) &kp LS(K) &kp LS(P) &kp LS(I) &kp LS(L) &kp LS(L) &kp LS(A) &kp LS(R) &kp N1 &kp SPACE &kp LS(S) &kp LS(O) &kp LS(U) &kp LS(T) &kp LS(H) &kp SPACE &kp N1 &kp N2 &kp LS(F)>;
+            bindings =
+                <&kp LANG_HANJA>,
+                <&macro_wait_time 2>,
+                <&kp LS(T) &kp LS(H) &kp LS(E) &kp SPACE &kp LS(L) &kp LS(I) &kp LS(N) &kp LS(K) &kp LS(P) &kp LS(I) &kp LS(L) &kp LS(L) &kp LS(A) &kp LS(R) &kp N1 &kp SPACE &kp LS(S) &kp LS(O) &kp LS(U) &kp LS(T) &kp LS(H) &kp SPACE &kp N1 &kp N2 &kp LS(F)>;
+
             label = "ADRESS";
         };
 
         JV: JV {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_1 &kp LS(NUMBER_8) &kp LS(NUMBER_9) &kp ENTER &kp LANG_HANJA &kp LEFT_ARROW &kp LS(J) &kp LS(V) &kp RIGHT &kp LANGUAGE_4>;
+            bindings =
+                <&kp LANGUAGE_1>,
+                <&macro_wait_time 2>,
+                <&kp LS(NUMBER_8) &kp LS(NUMBER_9) &kp ENTER &kp LANG_HANJA>,
+                <&macro_wait_time 2>,
+                <&kp LEFT_ARROW &kp LS(J) &kp LS(V) &kp RIGHT &kp LANG1>;
+
             label = "JV";
         };
 
         JR: JR {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_1 &kp LS(NUMBER_8) &kp LS(NUMBER_9) &kp ENTER &kp LANG_HANJA &kp LEFT_ARROW &kp LS(J) &kp LS(R) &kp RIGHT &kp LANGUAGE_1>;
+            bindings =
+                <&kp LANGUAGE_1>,
+                <&macro_wait_time 2>,
+                <&kp LS(NUMBER_8) &kp LS(NUMBER_9) &kp ENTER &kp LANG_HANJA>,
+                <&macro_wait_time 2>,
+                <&kp LEFT_ARROW &kp LS(J) &kp LS(R) &kp RIGHT &kp LANGUAGE_1>;
+
             label = "JR";
         };
 
         machi: machi {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_1 &kp LS(NUMBER_8) &kp LS(NUMBER_9) &kp ENTER &kp LEFT_ARROW &kp M &kp A &kp C &kp H &kp I &kp S &kp E &kp N &kp N &kp SPACE &kp ENTER &kp RIGHT>;
+            bindings =
+                <&kp LANGUAGE_1>,
+                <&macro_wait_time 2>,
+                <&kp LS(NUMBER_8) &kp LS(NUMBER_9) &kp ENTER &kp LEFT_ARROW &kp M &kp A &kp C &kp H &kp I &kp S &kp E &kp N &kp N &kp SPACE &kp ENTER &kp RIGHT &kp LANGUAGE_1>;
+
             label = "MACHI";
         };
 
         pass4: pj {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANG_HANJA &kp P &kp J &kp P &kp J &kp N8 &kp N7 &kp N8 &kp N7 &kp ENTER>;
+            bindings =
+                <&kp LANG_HANJA>,
+                <&macro_wait_time 2>,
+                <&kp P &kp J &kp P &kp J &kp N8 &kp N7 &kp N8 &kp N7 &kp ENTER>;
+
             label = "PJ";
         };
 
         kakko: kakko {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_1 &kp K &kp A &kp K &kp K &kp O &kp SPACE &kp ENTER &kp LEFT>;
+            bindings =
+                <&kp LANGUAGE_1>,
+                <&macro_wait_time 2>,
+                <&kp K &kp A &kp K &kp K &kp O &kp SPACE &kp ENTER &kp LEFT>;
+
             label = "KAKKO";
         };
 
         undo: undo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANG_HANJA &kp LC(Z)>;
+            bindings = <&kp LANG_HANJA>, <&macro_wait_time 1>, <&kp LC(Z)>;
+
             label = "UNDO";
         };
 
         cut: cut {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANG_HANJA &kp LC(X)>;
+            bindings = <&kp LANG_HANJA>, <&macro_wait_time 1>, <&kp LC(X)>;
+
             label = "CUT";
         };
 
         copy: copy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANG_HANJA &kp LC(C)>;
+            bindings = <&kp LANG_HANJA>, <&macro_wait_time 1>, <&kp LC(C)>;
+
             label = "COPY";
         };
 
         paste: paste {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANG_HANJA &kp LC(V)>;
+            bindings = <&kp LANG_HANJA>, <&macro_wait_time 1>, <&kp LC(V)>;
+
             label = "PASTE";
         };
 
         big: big {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANG_HANJA &kp LC(B)>;
+            bindings = <&kp LANG_HANJA>, <&macro_wait_time 1>, <&kp LC(B)>;
+
             label = "BIG";
         };
 
@@ -239,8 +292,10 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LANG_HANJA &kp LG(R)>,
+                <&kp LANG_HANJA>,
                 <&macro_wait_time 2>,
+                <&kp LG(R)>,
+                <&macro_wait_time 10>,
                 <&kp N &kp O &kp T &kp E &kp P &kp A &kp D &kp ENTER>;
 
             label = "NOTEPAD";
@@ -250,8 +305,10 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LANG_HANJA &kp LG(R)>,
+                <&kp LANG_HANJA>,
                 <&macro_wait_time 2>,
+                <&kp LG(R)>,
+                <&macro_wait_time 10>,
                 <&kp LC(C) &kp LC(V) &kp ENTER>;
 
             label = "OPEN";
@@ -260,7 +317,11 @@
         kakklink: kakklink {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANG_HANJA &kp LESS_THAN &kp GREATER_THAN &kp LEFT_ARROW &kp LC(V) &kp RIGHT_ARROW &kp ENTER>;
+            bindings =
+                <&kp LANG_HANJA>,
+                <&macro_wait_time 2>,
+                <&kp LESS_THAN &kp GREATER_THAN &kp LEFT_ARROW &kp LC(V) &kp RIGHT_ARROW &kp ENTER>;
+
             label = "KAKKLINK";
         };
 
@@ -269,8 +330,10 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LANG_HANJA &kp F2 &kp LEFT_ARROW &kp LC(V)>,
+                <&macro_wait_time 5>,
+                <&kp ENTER>,
                 <&macro_wait_time 2>,
-                <&kp ENTER>;
+                <&macro_press>;
 
             label = "NAME";
         };
