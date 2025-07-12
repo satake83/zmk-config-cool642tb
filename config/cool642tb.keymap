@@ -76,7 +76,7 @@
 
         combo8task {
             bindings = <&kp LS(LC(ESCAPE))>;
-            key-positions = <0 1>;
+            key-positions = <0 1 34>;
         };
 
         combo9lang1 {
