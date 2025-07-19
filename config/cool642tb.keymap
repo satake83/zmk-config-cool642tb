@@ -295,7 +295,7 @@
                 <&kp LANG_HANJA>,
                 <&macro_wait_time 2>,
                 <&kp LG(R)>,
-                <&macro_wait_time 30>,
+                <&macro_wait_time 50>,
                 <&kp N &kp O &kp T &kp E &kp P &kp A &kp D &kp ENTER>;
 
             label = "NOTEPAD";
