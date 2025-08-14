@@ -69,8 +69,8 @@
             key-positions = <32 33>;
         };
 
-        combo7delet {
-            bindings = <&kp DELETE>;
+        combo7lay4 {
+            bindings = <&sl 4>;
             key-positions = <40 41>;
         };
 
@@ -80,7 +80,7 @@
         };
 
         combo9lay4 {
-            bindings = <&mo 4>;
+            bindings = <&sl 4>;
             key-positions = <39 38>;
         };
 
